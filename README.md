@@ -4,11 +4,12 @@
 Este programa foi criado para facilitar a rotina de manipulação de dados para a inserção em planilhas da empresa. Ele oferece funcionalidades úteis, como busca de informações com base no CEP, formatação de documentos e padronização de texto. Possui uma interface gráfica amigável e permite a geração de um executável para facilitar o uso.
 
 ## Funcionalidades
-- **Busca de Dados pelo CEP:** Preenche automaticamente logradouro, localidade, bairro e UF com base no CEP informado.
+- **Busca de Dados pelo CEP:** Preenche automaticamente cidade e UF com base no CEP informado.
 - **Formatação de CPF/CNPJ:** Ajusta os números para o formato correto.
 - **Transformação de Texto:** Converte qualquer texto para maiúsculas.
 
 ## Instruções de Uso
+Para alteração ou uso próprio do algoritmo:
 1. **Baixe ou clone o repositório:**
    ```bash
    git clone https://github.com/seu-usuario/auxiliar-importacao-planilhas.git
@@ -22,7 +23,7 @@ Este programa foi criado para facilitar a rotina de manipulação de dados para 
    ```bash
    python app.py
    ```
-5. **Utilize a interface gráfica para carregar e manipular suas planilhas.**
+5. **Utilize o programa para o auxílio no ajuste e busca de certos dados.**
 
 ## Geração de Executável
 Caso prefira usar o programa como executável:
