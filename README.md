@@ -38,5 +38,6 @@ Caso prefira usar o programa como executável:
 3. O executável estará disponível na pasta `dist`.
 
 ## Observações
+- Em breve, o arquivo executável do programa será disponibilizado.
 - Este projeto está em desenvolvimento e pode receber novas funcionalidades no futuro.
 - Caso encontre problemas ou tenha sugestões, fique à vontade para contribuir!
