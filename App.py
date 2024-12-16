@@ -28,6 +28,8 @@ class Interface:
         self.cidade_ou_uf = ft.Text(value='Qual informação você precisa?', visible=False)
         self.cidade = ft.ElevatedButton(text='Cidade', on_click=lambda e: self.cpu(e, 'localidade'), visible=False)
         self.uf = ft.ElevatedButton(text='UF', on_click=lambda e: self.cpu(e, 'uf'), visible=False)
+        self.rua = ft.ElevatedButton(text='Logradouro', on_click=lambda e: self.cpu(e, 'logradouro'), visible=False)
+        self.bairro = ft.ElevatedButton(text='Bairro', on_click=lambda e: self.cpu(e, 'bairro'), visible=False)
 
         self.cpf_cnpj = ft.ElevatedButton(text='Formatação de CPF/CNPJ', on_click= lambda e: self.setDados(e, 2, self.cpf_cnpj.text))
         self.maius = ft.ElevatedButton(text='Letras Maiúsculas', on_click=lambda e: self.setDados(e, 3, self.maius.text))
@@ -51,6 +53,7 @@ class Interface:
 
         page.add(ft.Row([self.cidade_ou_uf], alignment=ft.MainAxisAlignment.CENTER))
         page.add(ft.Row([self.cidade, self.uf], alignment=ft.MainAxisAlignment.CENTER))
+        page.add(ft.Row([self.rua, self.bairro], alignment=ft.MainAxisAlignment.CENTER))
 
         page.add(self.container)
  
@@ -66,6 +69,8 @@ class Interface:
             self.cidade_ou_uf.visible=True
             self.cidade.visible=True
             self.uf.visible=True
+            self.rua.visible=True
+            self.bairro.visible=True
             self.page.update()
         else:
             self.cpu(e)
@@ -90,6 +95,8 @@ class Interface:
         self.cidade_ou_uf.visible=False
         self.cidade.visible=False
         self.uf.visible=False
+        self.rua.visible=False
+        self.bairro.visible=False
         match self.op:
             case 1 | 2: # Cep /CPF-CNPJ
                 self.mostrar_dados.value= ''
@@ -172,6 +179,8 @@ class Interface:
         self.cidade_ou_uf.visible=False
         self.cidade.visible=False
         self.uf.visible=False
+        self.rua.visible=False
+        self.bairro.visible=False
         self.page.update()
         
 
